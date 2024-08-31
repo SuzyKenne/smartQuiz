@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import Header from '../common/header/Header';
 import Footer from '../common/footer/Footer';
+import Accordion from '../common/accordion/Accordion';
 
 function Home() {
   return (
@@ -14,8 +15,12 @@ function Home() {
             your intellect and expand your horizons. 
         </p>
         <button>Get Started</button>
-      </div>
-      
+        <div className='accordion'>
+          <h1>SmartQuiz FAQs</h1>
+         <Accordion />       
+        </div> 
+      </div> 
+        
       <Footer />
     </div>
   );
