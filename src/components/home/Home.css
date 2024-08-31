@@ -1,0 +1,67 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .home-slogan {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+  }
+  
+  .home-slogan h1 {
+    font-size: 2.5rem;
+    color: #4338ca;
+    margin-bottom: 1rem;
+    max-width: 800px;
+  }
+  
+  .home-slogan p {
+    font-size: 1.2rem;
+    color: #4b5563;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .home-slogan button {
+    background-color: #6d28d9;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-slogan button:hover {
+    background-color: #5b21b6;
+    transform: translateY(-2px);
+  }
+  
+  .home-slogan button:active {
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 768px) {
+    .home-slogan h1 {
+      font-size: 2rem;
+    }
+  
+    .home-slogan p {
+      font-size: 1rem;
+    }
+  
+    .home-slogan button {
+      font-size: 1rem;
+      padding: 0.7rem 1.2rem;
+    }
+  }
