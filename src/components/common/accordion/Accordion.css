@@ -46,7 +46,7 @@
   }
   
   .item.active .icon {
-    transform: rotate(45deg);
+    transform: rotate(50deg);
   }
   
   .content {

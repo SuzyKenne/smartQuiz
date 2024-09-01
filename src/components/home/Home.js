@@ -1,8 +1,10 @@
 import React from 'react';
 import './Home.css';
+import { Link } from  'react-router-dom';
 import Header from '../common/header/Header';
 import Footer from '../common/footer/Footer';
 import Accordion from '../common/accordion/Accordion';
+import Category from '../common/category/Category';
 
 function Home() {
   return (
@@ -14,7 +16,11 @@ function Home() {
           fun, and educational quizzes designed to challenge
             your intellect and expand your horizons. 
         </p>
-        <button>Get Started</button>
+        <Link to='/quiz' className="get-started-button">Get Started</Link>
+        <div className='accordion'>
+          <h1>Explore All Our Categories</h1>
+          <Category />
+        </div>
         <div className='accordion'>
           <h1>SmartQuiz FAQs</h1>
          <Accordion />       

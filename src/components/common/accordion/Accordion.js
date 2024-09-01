@@ -18,10 +18,10 @@ function Accordion() {
         <div className="Accordion">
             <div className="wrapper">
                 {faqData.map((item, i) =>(
-                    <div key={i} className="item" onClick={()=>toggle(i)}>
+                    <div key={i} className={`item ${selected === i ? 'active' : ''}`} onClick={()=>toggle(i)}>
                         <div className="title">
                             <h2>{item.question}</h2>
-                            <span>{selected === i ? '-' : '+'}</span>
+                            <span className="icon">{selected === i ? '-' : '+'}</span>
                         </div>
                         <div  className={selected === i ? 'content show' : 'content'}>
                             <p>{item.answer}</p>
