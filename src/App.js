@@ -1,11 +1,34 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './components/home/Home';
+import Category from './components/common/category/Category';
+import Header from './components/common/header/Header';
+import Footer from './components/common/footer/Footer';
+import Accordion from './components/common/accordion/Accordion';
+import Quiz from './components/quiz/Quiz';
+import Result from './components/results/Result';
+import Topic from './components/topic/Topic';
+
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/categories' element={<Category/>}/>
+          <Route path='/header' element={<Header/>}/>
+          <Route path='/footer' element={<Footer/>}/>
+          <Route path='/accordion' element={<Accordion/>}/>
+          <Route path='/quiz' element={<Quiz/>}/>
+          <Route path='/result' element={<Result/>}/>
+          <Route path='/topic' element={<Topic />}/>
+        </Routes>
+        {/* <Home /> */}
+      </div>
+    </Router>
+    
   );
 }
 
