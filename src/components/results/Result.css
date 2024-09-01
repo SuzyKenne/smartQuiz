@@ -1,0 +1,27 @@
+.Result{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Result-content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f3f4f6;
+}
+
+.Result-content h1{
+    font-size: 2rem;
+    color: #4338ca;
+    margin-bottom: 1rem;
+}
+
+.Result-content p{
+    font-size: 1.2rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+}
