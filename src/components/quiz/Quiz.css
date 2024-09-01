@@ -1,0 +1,29 @@
+.Quiz {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .quiz-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f3f4f6;
+  }
+  
+  .quiz-content h1 {
+    font-size: 2rem;
+    color: #4338ca;
+    margin-bottom: 1rem;
+  }
+  
+  .quiz-content p {
+    font-size: 1.2rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+  }
+  
+  /* Add more styles as needed for quiz functionality */
