@@ -16,7 +16,7 @@ function Home() {
           fun, and educational quizzes designed to challenge
             your intellect and expand your horizons. 
         </p>
-        <Link to='/categories' className="get-started-button">Get Started</Link>
+        <Link to='/selectedField' className="get-started-button">Get Started</Link>
         <div className='accordion'>
           <h1>Explore All Our Categories</h1>
           <CategoryById />

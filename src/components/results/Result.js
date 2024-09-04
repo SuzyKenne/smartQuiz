@@ -10,7 +10,6 @@ function Result() {
         <Header />
         <div className="Result-content">
             <h1>Quiz result:</h1>
-            <p>Choose a category to start you Result:</p>
         </div>
         <Footer />
     </div>

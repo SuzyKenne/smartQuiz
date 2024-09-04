@@ -10,6 +10,7 @@ import Quiz from './components/quiz/Quiz';
 import Result from './components/results/Result';
 import Topic from './components/topic/Topic';
 import CountDownTimer from './components/countDownTimer/CountDownTimer';
+import SelectedField from './components/selectedField/SelectedField';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path='/result' element={<Result/>}/>
           <Route path='/topic' element={<Topic />}/>
           <Route path='/countdowntimer' element={<CountDownTimer />}/>
+          <Route path='/selectedField' element={<SelectedField />}/>
         </Routes>
         {/* <Home /> */}
       </div>

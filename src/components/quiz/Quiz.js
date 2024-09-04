@@ -4,9 +4,15 @@ import { Link } from 'react-router-dom';
 import Header from "../common/header/Header";
 import Footer from "../common/footer/Footer";
 import CountDownTimer from "../countDownTimer/CountDownTimer";
+import UseAxios from "../../hooks/UseAxios";
 
 
 function Quiz() {
+
+
+  let apiUrl = `/api.php?amount=10`;
+  const { response, loading} = UseAxios({url: apiUrl});
+  console.log(response)
   return (
     <div className="Quiz">
         <Header />
