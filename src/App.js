@@ -9,6 +9,7 @@ import Accordion from './components/common/accordion/Accordion';
 import Quiz from './components/quiz/Quiz';
 import Result from './components/results/Result';
 import Topic from './components/topic/Topic';
+import CountDownTimer from './components/countDownTimer/CountDownTimer';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/quiz' element={<Quiz/>}/>
           <Route path='/result' element={<Result/>}/>
           <Route path='/topic' element={<Topic />}/>
+          <Route path='/countdowntimer' element={<CountDownTimer />}/>
         </Routes>
         {/* <Home /> */}
       </div>
