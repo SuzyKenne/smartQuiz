@@ -11,8 +11,21 @@ function Quiz() {
     <div className="Quiz">
         <Header />
         <div className="quiz-content">
-            <h1>Welcome to SmartQuiz!</h1>
-            <CountDownTimer />
+            <h1>Good luck for your Quiz!</h1>
+            <CountDownTimer seconds={90}/>
+            <div className="quiz-question">
+              <h2>question title</h2>
+              <div className="answer-options">
+                 <button className="answer-button">question1</button>
+                <button className="answer-button">question1</button>
+                <button className="answer-button">question1</button>
+                <button className="answer-button">question1</button>
+              </div>              
+            </div>
+            <div className="quiz-navigation">
+              <Link className="nav-button">Back</Link>
+              <Link className="nav-button">Next</Link>
+            </div>
             <Link to='/result' className="get-started-button">Submit</Link>
         </div>
         <Footer />
