@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-function CountDownTimer({seconds} ) {
-    const [countDown, setCountDown] = useState(seconds);
+function CountDownTimer({initialTime, onTimeUp} ) {
+    const [countDown, setCountDown] = useState(initialTime);
+
+    const timeId = useRef();
+
     const formatTime = (time) => {
         let minutes = Math.floor(time / 60)
         let seconds = Math.floor(time - minutes * 60)
@@ -10,7 +13,7 @@ function CountDownTimer({seconds} ) {
         if (seconds < 10) seconds = '0' + seconds;
         return minutes + ':' + seconds;
     }
-    const timeId = useRef();
+    
 
     const timeColor = countDown > 30 ? '#4caf50' : countDown > 10 ? '#ffa500' : '#ff0000'
 
@@ -26,7 +29,12 @@ function CountDownTimer({seconds} ) {
             clearInterval(timeId.current);
             alert("End")
         }
-    }, [countDown])
+    }, [countDown, onTimeUp])
+
+    useEffect(() => {
+        setCountDown(initialTime);
+    }, [initialTime]);
+
     return (
         <div className="CountDownTimer" style={StyleSheet.container}>
             <div style={{...styles.timer, color: timeColor}}>
