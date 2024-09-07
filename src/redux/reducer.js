@@ -39,6 +39,11 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 score: action.payload,
             };
+        case 'RESET_QUIZ':
+            return {
+                  ...state,
+                  score: 0,
+            };
         default: 
             return state;
     }
