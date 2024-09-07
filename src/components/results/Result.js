@@ -29,7 +29,7 @@ function Result() {
       <div className="Result-content">
         <h1>Quiz Result</h1>
         <div className="result-details">
-          <p>Final Score: {score} out of {questionAmount}</p>
+          <p>Final Score: {score} / {questionAmount}</p>
           <p>Percentage: {percentage.toFixed(2)}%</p>
           <p>Difficulty: {questionDifficulty.charAt(0).toUpperCase() + questionDifficulty.slice(1)}</p>
           <p>Type: {questionType.charAt(0).toUpperCase() + questionType.slice(1)}</p>
