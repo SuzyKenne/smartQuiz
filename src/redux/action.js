@@ -4,7 +4,8 @@ import {
     CHANGE_DIFFICULTY,
     CHANGE_TYPES,
     CHANGE_AMOUNT,
-    CHANGE_SCORE
+    CHANGE_SCORE,
+    RESET_QUIZ
 } from './actionTypes';
 
 
@@ -31,4 +32,9 @@ export const handleAmountChange = (payload) => ({
 export const handleScoreChange = (payload) => ({
     type: CHANGE_SCORE,
     payload,
+});
+
+export const resetQuiz = (payload) => ({
+    type: RESET_QUIZ,
+    payload
 });
