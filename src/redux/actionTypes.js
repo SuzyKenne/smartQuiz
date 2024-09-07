@@ -3,3 +3,4 @@ export const CHANGE_DIFFICULTY = "CHANGE_DIFFICULTY";
 export const CHANGE_TYPES = "CHANGE_TYPES";
 export const CHANGE_AMOUNT = "CHANGE_AMOUNT";
 export const CHANGE_SCORE = "CHANGE_SCORE";
+export const RESET_QUIZ = "RESET_QUIZ";
